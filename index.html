@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / X</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row px-sm-3chat">
+            <div class="sidebar border-end sticky-top col-3 d-none d-sm-flex flex-column justify-content-between ps-5 vh-100">
+                <div>
+                    <div class="logo my-2 mx-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="navigation d-flex align-items-start flex-column mt-4">
+                        <div class="fs-5 fw-bold d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons material-icons-bold">home</span>
+                            <span class="font-weight-bold">Home</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons">search</span>
+                            <span>Explore</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons-outlined">notifications</span>
+                            <span>Notifications</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons-outlined">mail</span>
+                            <span>Messages</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons-outlined">article</span>
+                            <span>Lists</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons-outlined">people</span>
+                            <span>Communities</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                            </svg>
+                            <span>Verified</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons-outlined">person</span>
+                            <span>Profile</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons-outlined">pending</span>
+                            <span>More</span>
+                        </div>
+                        <button class="btn btn-primary post-btn rounded-pill fs-5 mt-3 p-2 font-weight-bold" type="button">Post</button>
+                    </div>
+                </div>
+                <div class="user-options d-flex align-items-center p-2 mb-5 rounded-pill nav-hover">
+                    <img class="rounded-circle me-3" src="assets/qA2vZ3fh_400x400.jpg" alt="profile picture" style="width: 50px; height: 50px;">
+                    <div>
+                        <div class="fw-bold">Kate Malale</div>
+                        <div class="text-secondary">@Kate_Malale</div>
+                    </div>
+                    <span class="material-icons-outlined ms-auto">more_horiz</span>
+                </div>
+            </div>
+            <main class="col-sm-5 p-0">
+                <div class="sticky-top main-top-transparent border-bottom">
+                    <p class="fs-5 fw-bold p-3 mb-0">Home</p>
+                    <div class="d-flex">
+                        <div class="d-flex flex-grow-1 justify-content-center nav-hover">
+                            <span class="h-100 py-3 border-bottom  border-3 border-primary fw-bold">For you</span>
+                        </div>
+                        <div class="d-flex flex-grow-1 justify-content-center nav-hover">
+                            <span class="py-3">Following</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row border-bottom d-flex justify-content-center m-0 bg-black">
+                    <div class="d-none d-sm-flex">
+                        <img class="rounded-circle align-self-start m-2" src="assets/qA2vZ3fh_400x400.jpg" alt="profile picture" style="width: 50px">
+                        <div class="d-flex flex-column px-2 pt-2 w-100 bg-black">
+                            <textarea class="fs-5 no-border bg-black" rows="1" type="text" placeholder="What is happening?!"></textarea>
+                            <div class="d-flex justify-content-between py-3">
+                                <div class="text-primary d-flex align-items-center">
+                                    <span class="post-addition material-icons-outlined p-2">image</span>
+                                    <span class="post-addition material-icons-outlined p-2">gif_box</span>
+                                    <span class="post-addition material-icons-outlined p-2">format_list_bulleted</span>
+                                    <span class="post-addition material-icons-outlined p-2">sentiment_satisfied</span>
+                                    <span class="post-addition material-icons-outlined p-2">free_cancellation</span>
+                                    <span class="post-addition material-icons-outlined p-2">location_on</span>
+                                </div>
+                                <button class="btn btn-primary rounded-pill fw-bold px-3 disabled">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trends-hover text-center border-bottom rounded-bottom py-3 px-3 bg-black">
+                    <p class="text-primary m-0">Show 342 posts</p>
+                </div>
+
+                <div>
+                    <div class="border-1 border-bottom d-flex py-2 px-3 gap-2 w-100 bg-black posts-hover">
+                        <img class="align-self-start rounded-circle" src="assets/_PiTu74t_400x400.jpg" alt="Profile Picture" style="width: 50px;">
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <span class="fw-bold d-flex align-items-center">mewtru •ᴗ•
+                                    <span class="verified-icon material-icons">verified</span></span>
+                                    <span class="text-secondary ms-1">@trunarla &#x2022; Sep 21</span>
+                                </div>
+                                <span class="post-action-options text-secondary material-icons-outlined p-1">more_horiz</span>
+                            </div>
+                            <div>
+                                <p class="lh-sm">Thank you JavaScript (TypeScript 😜).</p>
+                                <img class="w-100 rounded" alt="Image" src="assets/F2oMk6VaUAIFwT3.jpg">
+                            </div>
+                            <div class="post-actions text-secondary d-flex justify-content-between align-items-center mt-2">
+                                <div class="post-action align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">mode_comment</span>
+                                    <span>209</span>
+                                </div>
+                                <div class="post-action-repost d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">loop</span>
+                                    <span>1045</span>
+                                </div>
+                                <div class="post-action-heart d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">favorite_border</span>
+                                    <span>1,372</span>
+                                </div>
+                                <div class="post-action d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">bar_chart</span>
+                                    <span>65.7K</span>
+                                </div>
+                                <span class="post-action share-icon material-icons-outlined p-2">file_upload</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-1 border-bottom d-flex py-2 px-3 gap-2 w-100 bg-black posts-hover">
+                        <img class="align-self-start rounded-circle" src="assets/zaio.jpg" alt="Profile Profile" style="width: 50px;">
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <span class=" fw-bold d-flex align-items-center">Zaio Coding School <span class="verified-icon material-icons">verified</span></span>
+                                    <span class="text-secondary ms-1">@zaionites &#x2022; Sep 14</span>
+                                </div>
+                                <span class="post-action-options text-secondary material-icons-outlined p-1">more_horiz</span>
+                            </div>
+                            <p class="lh-sm">CSS frameworks are the building blocks for modern web design! 💻 Here are the top 5 CSS frameworks that you need to try out.
+                                <br>
+                                Join Our Fullstack Web Development Course now for only 33% of the Price!! <br> <br>  <span class="text-primary">#CSSFrameworks</span> <span class="text-primary">#WebDesign</span> <span class="text-primary">#Coding</span> <span class="text-primary">#Programming</span> <span class="text-primary">#ziao</span></p>
+                                <img class="w-100 rounded" alt="Image" src="assets/zai.jpg">
+                            <div class="post-actions text-secondary d-flex justify-content-between align-items-center mt-2">
+                                <div class="post-action align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">mode_comment</span>
+                                    <span>16</span>
+                                </div>
+                                <div class="post-action-repost d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">loop</span>
+                                    <span>105</span>
+                                </div>
+                                <div class="post-action-heart d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">favorite_border</span>
+                                    <span>817</span>
+                                </div>
+                                <div class="post-action d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">bar_chart</span>
+                                    <span>42.9K</span>
+                                </div>
+                                <span class="post-action share-icon material-icons-outlined p-2">file_upload</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-1 border-bottom d-flex py-2 px-3 gap-2 w-100 posts-hover bg-black">
+                        <img class="align-self-start rounded-circle" src="assets/code gir.jpg" style="width: 50px;" alt="Profile">
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <span class="fw-bold d-flex align-items-center">Coder girl 👩‍💻 <span class="verified-icon material-icons">verified</span></span>
+                                    <span class="text-secondary ms-1">@dev_maims &#x2022; Sep 14</span>
+                                </div>
+                                <span class="post-action-options text-secondary material-icons-outlined p-1">more_horiz</span>
+                            </div>
+                            <div>
+                                <p>Without telling me the programming language u are currently learning write one line of code ⬇️
+                                And I will tell you the name of the language</p>
+                            </div>
+                            <div class="post-actions text-secondary d-flex justify-content-between align-items-center mt-2">
+                                <div class="post-action align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">mode_comment</span>
+                                    <span>32</span>
+                                </div>
+                                <div class="post-action-repost d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">loop</span>
+                                    <span>170</span>
+                                </div>
+                                <div class="post-action-heart d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">favorite_border</span>
+                                    <span>1,372</span>
+                                </div>
+                                <div class="post-action d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">bar_chart</span>
+                                    <span>65.7K</span>
+                                </div>
+                                <span class="post-action share-icon material-icons-outlined p-2">file_upload</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-1 border-bottom d-flex py-2 px-3 gap-2 w-100 bg-black posts-hover">
+                        <img class="align-self-start rounded-circle" src="assets/tha.jpg" style="width: 50px;" alt="Profile">
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <span class="fw-bold d-flex align-items-center">Thabo</span>
+                                    <span class="text-secondary ms-1">@ThaboDev&#x2022; 22h</span>
+                                </div>
+                                <span class="post-action-options text-secondary material-icons-outlined p-1">more_horiz</span>
+                            </div>
+                            <p> They never tell you that it is hard being a self taught developer</p>
+                            <div class="post-actions text-secondary d-flex justify-content-between align-items-center mt-2">
+                                <div class="post-action align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">mode_comment</span>
+                                    <span>3429</span>
+                                </div>
+                                <div class="post-action-repost d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">loop</span>
+                                    <span>558</span>
+                                </div>
+                                <div class="post-action-heart d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">favorite_border</span>
+                                    <span>39</span>
+                                </div>
+                                <div class="post-action d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">bar_chart</span>
+                                    <span>5435</span>
+                                </div>
+                                <span class="post-action share-icon material-icons-outlined p-2">file_upload</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-1 border-bottom d-flex py-2 px-3 gap-2 w-100 bg-black posts-hover">
+                        <img class="align-self-start rounded-circle" src="assets/last.jpg" style="width: 50px; " alt="Profile">
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <span class="fw-bold d-flex align-items-center">Omphile Palesa</span>
+                                    <span class="text-secondary ms-1">@Omphile_RSA &#x2022; Sep 19</span>
+                                </div>
+                                <span class="post-action-options text-secondary material-icons-outlined p-1">more_horiz</span>
+                            </div>
+                            <div>
+                                <p class="lh-sm">Its really bad this side</p>
+                                <img class="w-100 rounded" alt="Image" src="assets/chiefs.jpg">
+                            </div>
+                            <div class="post-actions text-secondary d-flex justify-content-between align-items-center mt-2">
+                                <div class="post-action align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">mode_comment</span>
+                                    <span>580.9K</span>
+                                </div>
+                                <div class="post-action-repost d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">loop</span>
+                                    <span>15.8K</span>
+                                </div>
+                                <div class="post-action-heart d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">favorite_border</span>
+                                    <span>20.5K</span>
+                                </div>
+                                <div class="post-action d-flex align-items-center gap-2">
+                                    <span class="material-icons-outlined p-2">bar_chart</span>
+                                    <span>100.7K</span>
+                                </div>
+                                <span class="post-action share-icon material-icons-outlined p-2">file_upload</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="rightbar d-none d-sm-block col-4 bg-black border-start px-4">
+                <div class="bg-black sticky-top p-1">
+                    <div class="bg-rightbar rounded-pill d-flex align-items-center gap-2 p-2">
+                        <span class="text-secondary material-icons-outlined">search</span>
+                        <input class="flex-grow-1 no-border bg-rightbar" type="text" placeholder="Search">
+                    </div>
+                </div>
+                <div class="bg-rightbar rounded my-3 p-3">
+                    <h2 class="fs-5 fw-bold">Subscribe to Premium</h2>
+                    <p class="fw-bold">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                    <button class="btn btn-primary post-btn rounded-pill fs-5 mt-3 p-2" type="button">Subscribe</button>
+                </div>
+                <div class="bg-rightbar rounded my-3 pt-3">
+                    <h2 class="fs-5 fw-bold p-2 px-3">Trends for you</h2>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Sports &#x2022; Trending </span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>#Springboks</b></p>
+                        <p class="text-secondary fs-small m-0">14.8K posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                        <span class="">Trending in South Africa</span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>#DSTVDeliciousFestival</b></p>
+                        <p class="text-secondary fs-small m-0">52.4K posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Trending in South Africa</span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>Siya</b></p>
+                        <p class="text-secondary fs-small m-0">29.2K posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Trending in South Africa</span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>KHOSI TWALA THE HOST</b></p>
+                        <p class="text-secondary fs-small">49.9K posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Trending in South Africa</span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>Music</b></p>
+                        <p class="text-secondary fs-small m-0">4, 523posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Trending in South Africa</span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>Thandiwe Mabuza</b></p>
+                        <p class="text-secondary fs-small m-0">15.3K posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Art &#x2022; Trending </span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>Eccentics Visual Arts</b></p>
+                        <p class="text-secondary fs-small m-0">12,4K posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Sports &#x2022; Trending </span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>PIRATES</b></p>
+                        <p class="text-secondary fs-small m-0">16.6K posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Trending in South Africa</span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>#Limpopo_Ngwana_Bomma</b></p>
+                        <p class="text-secondary fs-small m-0">1,699 posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Music &#x2022; Trending </span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>Cassper</b></p>
+                        <p class="text-secondary fs-small m-0">2,809 posts</p>
+                    </div>
+                    <div class="trends-hover rounded-bottom py-3 px-3">
+                        <p class="text-primary m-0">Show More</p>
+                    </div>
+                </div>
+                <div class="bg-rightbar rounded my-3 p-3">
+                    <h2 class="fs-5 fw-bold p-2 px-3">Who to follow</h2>
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="d-flex align-items-start flex-wrap">
+                            <img class="align-self-start rounded-circle me-2" src="assets/matsepo.jpg" style="width: 50px;" alt="Profile">
+                            <div>
+                                <span class=" fw-bold d-flex align-items-center">Matshepo</span>
+                                <span class="text-secondary">@Matshepo</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-dark fw-bold rounded-pill px-3" type="button">Follow</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="d-flex align-items-start flex-wrap">
+                            <img class="align-self-start rounded-circle me-2" src="assets/mansi.jpg" style="width: 50px;" alt="Profile">
+                            <div>
+                                <span class=" fw-bold d-flex align-items-center">Mansi</span>
+                                <span class="text-secondary">@Mansi_RSA</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-dark fw-bold rounded-pill px-3" type="button">Follow</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="d-flex align-items-start flex-wrap">
+                            <img class="align-self-start rounded-circle me-2" src="assets/ilma.jpg" style="width: 50px;" alt="Profile">
+                            <div>
+                                <span class=" fw-bold d-flex align-items-center">Ilma</span>
+                                <span class="text-secondary">@Just_Ilma</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-dark fw-bold rounded-pill px-3" type="button">Follow</button>
+                    </div>
+                </div>
+                <div class="footer text-secondary d-flex flex-wrap align-items-center gap-2 px-3">
+                    <span>Terms of service</span>
+                    <span>Privacy Policy</span>
+                    <span>Cookie Policy</span>
+                    <span>Accessiblity</span>
+                    <span>Ads info</span>
+                    <span class="d-flex">
+                        <span>More</span>
+                        <span class="material-icons-outlined">more_horiz</span>
+                    </span>
+                    <span>© 2023 X Corp.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

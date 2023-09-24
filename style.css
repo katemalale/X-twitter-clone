@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.sidebar {
+        background-color: black;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.logo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.146);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.logo:hover::before {
+    opacity: 1;
+}
+.container-fluid {
+    color: rgb(255, 255, 255);
+}
+
+img {
+    cursor: pointer;
+    
+}
+
+.nav-icon {
+    width: 100px;
+}
+
+.post-btn {
+    width: 70%;
+    font-weight: bold;
+}
+
+.material-icons {
+    font-size: 30px;
+}
+
+.nav-hover:hover {
+    background-color: rgb(22, 22, 23);
+    cursor: pointer;
+}
+
+.trends-hover:hover {
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
+}
+
+.posts-hover:hover {
+    background-color: rgb(247, 246, 246);
+    cursor: pointer;
+}
+
+.no-border {
+    border: 0;
+    outline: none;
+    line-break: auto;
+    resize: none;
+}
+
+.sidebar {
+    overflow-y: auto;
+}
+
+.fs-small {
+    font-size: 0.9rem;
+}
+
+.post-actions > div > span, .post-actions > span {
+    font-size: 0.9rem;
+}
+
+.post-action:hover, .post-action-options:hover {
+    color: #0662eb !important;
+}
+
+.post-action:hover > .material-icons-outlined, .share-icon:hover, .post-action-options:hover, .post-addition:hover {
+    background-color: #dce5f1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.post-addition:hover {
+    cursor: pointer;
+}
+
+.post-action-repost:hover > .material-icons-outlined {
+    background-color: #d9f8da;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.post-action-heart:hover > .material-icons-outlined {
+    background-color: #f7e4e4;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.post-action-repost:hover {
+    color: rgb(8, 135, 8);
+}
+
+.post-action-heart:hover {
+    color: rgb(237, 71, 71);
+}
+
+.verified-icon {
+    color: #1162db;
+    font-size: 0.9rem;
+}
+
+.main-top-transparent {
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(20px);
+}
+
+.footer {
+    font-size: 0.8rem;
+}
+
+.footer > span:not(.d-flex):hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer > span:nth-child(6) > span:nth-child(1):hover {
+    text-decoration: underline;
+}
+
+.bg-rightbar {
+    background-color: rgb(19, 19, 19);
+}
